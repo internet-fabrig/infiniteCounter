@@ -1,0 +1,75 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>countininfiniteCounter demo</title>
+  <style type="text/css">
+    .counter {
+    width:100px;
+    height:100px;
+    background:#767f65;
+    overflow:hidden;
+}
+.numbers {
+    width:50px;
+    float: left;
+    white-space:nowrap;
+    animation: countNumber 30s;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.numbers-2 {
+    animation: countNumber 2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.numbers div {
+    text-align:center;
+    float:left;
+    width:50px;
+    height:100px;
+    line-height:100px;
+    display:inline-block;
+    font-size: 44px;
+}
+@-webkit-keyframes countNumber {
+    0% {
+        margin-top: 0px
+    }
+    100% {
+        margin-top:-900px
+    }
+}
+</style>
+
+</head>
+<body>
+  <h1>Yeah, we countin'</h1>
+
+<div class="counter">
+    <div class="numbers">
+        <div>0</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="numbers numbers-2">
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</div>
+</body></html>
